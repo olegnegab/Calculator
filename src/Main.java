@@ -76,7 +76,7 @@ public class Main {
             default:
                 throw new Exception("Строка не является математической операцией");
         }
-        String answer = "";
+        String answer = "Результат вычисления находится вне пределов";
         for (Map.Entry<String, Integer> x : map.entrySet()) {
             if (x.getValue() == result) {
                 answer = x.getKey();
