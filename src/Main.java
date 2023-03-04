@@ -26,7 +26,7 @@ public class Main {
     public static String calcGr(String[] symbols) throws Exception {
         int num1 = Integer.parseInt(symbols[0]);
         int num2 = Integer.parseInt(symbols[2]);
-        int result = 0;
+        int result;
         if (num1 > 10 || num1 < 0 || num2 > 10 || num2 < 0) {
             throw new Exception("Число должно быть больше 1 и меньше 10");
         }
@@ -51,7 +51,7 @@ public class Main {
 
     public static String calcRim(String[] symbols) throws Exception {
 
-        int result = 0;
+        int result;
         int num1 = map.get(symbols[0]);
         int num2 = map.get(symbols[2]);
         if (num1 > 10 || num1 < 0 || num2 > 10 || num2 < 0) {
